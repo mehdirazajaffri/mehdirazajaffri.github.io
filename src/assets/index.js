@@ -8,7 +8,6 @@ import logotext from './logo/logo-text-black.png';
 
 import mehdiAvatar from './personal/mehdi-avatar.png';
 import mehdi from './personal/mehdi.png';
-import shaq from './personal/shaq.png';
 
 import backend from './icons/backend.png';
 import close from './icons/close.png';
@@ -48,6 +47,8 @@ import venturedive from './company/venturedive.png';
 
 import aws from './icons/aws.png';
 import django from './icons/django.png';
+import java from './icons/java.png';
+import lambda from './icons/lambda.png';
 import python from './icons/python.png';
 import berkeley from './projects/berkeley.png';
 import komikult from './projects/komikult.png';
@@ -61,8 +62,6 @@ import space from './projects/space-hub.png';
 import vistajet from './projects/vistajet.png';
 import xbyoj from './projects/xbyoj.png';
 import zglue from './projects/zglue.png';
-import java from './icons/java.png';
-import lambda from './icons/lambda.png';
 
 
 export {
@@ -72,7 +71,6 @@ export {
   worldmap,
   logo,
   logotext,
-  shaq,
   backend,
   ux,
   frontend,
