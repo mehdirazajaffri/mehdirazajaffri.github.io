@@ -10,7 +10,9 @@ import {
   git,
   graphql,
   html,
+  java,
   javascript,
+  lambda,
   nodejs,
   postgresql,
   prototyping,
@@ -122,6 +124,14 @@ const technologies = [
     name: 'docker',
     icon: docker,
   },
+  {
+    name: 'java',
+    icon: java
+  },
+  {
+    name: 'lambda',
+    icon: lambda
+  }
   
 ];
 

@@ -154,7 +154,6 @@ ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  repo: PropTypes.string.isRequired,
   demo: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
   active: PropTypes.string.isRequired,

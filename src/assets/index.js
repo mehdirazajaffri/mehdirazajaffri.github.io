@@ -61,6 +61,9 @@ import space from './projects/space-hub.png';
 import vistajet from './projects/vistajet.png';
 import xbyoj from './projects/xbyoj.png';
 import zglue from './projects/zglue.png';
+import java from './icons/java.png';
+import lambda from './icons/lambda.png';
+
 
 export {
   bwmap,
@@ -119,5 +122,7 @@ export {
   sellanycar,
   berkeley,
   xbyoj,
-  mehdiAvatar
+  mehdiAvatar,
+  java,
+  lambda
 };
