@@ -1,21 +1,21 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { pineapple, pineappleHover } from "../assets";
+import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { github, pineapple, pineappleHover } from "../assets";
-import { projects } from "../constants";
-import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
+import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
+import { useState } from "react";
+import PropTypes from "prop-types";
+
 
 const ProjectCard = ({
   id,
   name,
   description,
   image,
-  repo,
   demo,
   index,
   active,
-  company,
   handleClick,
 }) => {
   return (
@@ -147,6 +147,18 @@ const Projects = () => {
       </motion.div>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  repo: PropTypes.string.isRequired,
+  demo: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  active: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default SectionWrapper(Projects, "projects");
