@@ -205,7 +205,7 @@ const projects = [
       },
     ],
     image: sellanycar,
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    demo: 'https://sellanycar.com/',
   },
   {
     id: 'project-3',
@@ -248,8 +248,7 @@ const projects = [
       },
     ],
     image: berkeley,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
+    demo: 'https://berkeley-assets.com/',
   },
   {
     id: 'project-5',
@@ -271,8 +270,7 @@ const projects = [
       },
     ],
     image: xbyoj,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    demo: 'https://www.oj-lifestyle.com/en-gb/x/home',
   },  
 ];
 
