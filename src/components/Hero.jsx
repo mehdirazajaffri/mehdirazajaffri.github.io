@@ -43,10 +43,11 @@ const Hero = () => {
                 Mehdi
               </span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
+            <p className={`${styles.heroSubText} mt-1 text-eerieBlack`}>
               Full Stack Developer. <br className="sm:block hidden" />
               <br/>
-                As a full stack developer, I have mixed Python, Django, AWS, Microservices, and AWS Serverless into a hilarious code-craving cocktail that'll make your servers laugh out loud and your bugs run away in fear!
+                I have mixed Python, Django, JS, AWS, and Serverless into a hilarious code-craving cocktail 
+                that'll make your servers laugh out loud and your bugs run away in fear!
             </p>
           </div>
           <div
