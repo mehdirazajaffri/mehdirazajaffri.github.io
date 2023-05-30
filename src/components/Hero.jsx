@@ -46,7 +46,7 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
               Full Stack Developer. <br className="sm:block hidden" />
               <br/>
-              Python, Django, AWS, Microservices, AWS Serverless: my code-craving cocktail!
+                As a full stack developer, I've mixed Python, Django, AWS, Microservices, and AWS Serverless into a hilarious code-craving cocktail that'll make your servers laugh out loud and your bugs run away in fear!
             </p>
           </div>
           <div
