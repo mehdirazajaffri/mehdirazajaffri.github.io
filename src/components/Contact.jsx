@@ -14,6 +14,8 @@ const Contact = () => {
     message: '',
   });
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,6 +25,22 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setError('');
+    if (form.name.trim() === '') {
+      setError('Please enter your name.');
+      return;
+    }
+
+    if (form.email.trim() === '') {
+      setError('Please enter your email.');
+      return;
+    }
+
+    if (form.message.trim() === '') {
+      setError('Please enter your message.');
+      return;
+    }
+
     setLoading(true);
 
     // sign up on emailjs.com (select the gmail service and connect your account).
@@ -43,13 +61,12 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
-
           setForm({
             name: '',
             email: '',
             message: '',
           });
+          setSuccess(true);
         },
         (error) => {
           setLoading(false);
@@ -118,6 +135,12 @@ const Contact = () => {
             />
           </label>
 
+          {error && <p className="text-red-500">{error}</p>}
+          {success && <p className="text-timberWolf font-medium">
+            Thank you. I will get back to you as soon as possible.
+          </p>}
+          
+
           <button
             type="submit"
             className="live-demo flex justify-center sm:gap-4 
@@ -132,6 +155,7 @@ const Contact = () => {
                 .querySelector('.contact-btn')
                 .setAttribute('src', sendHover);
             }}
+            style={{ width: '100%' }}
             onMouseOut={() => {
               document.querySelector('.contact-btn').setAttribute('src', send);
             }}>
