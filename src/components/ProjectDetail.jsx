@@ -12,12 +12,12 @@ const FlowDiagram = ({ steps }) => {
       className="w-full mt-8 p-8 bg-gradient-to-br from-jetLight to-eerieBlack 
       rounded-2xl card-shadow"
     >
-      <h3 className="text-[24px] font-bold text-timberWolf uppercase font-beckman mb-8">
+      <h3 className="text-[24px] font-bold text-white uppercase font-beckman mb-8">
         System Flow
       </h3>
       <div className="relative">
         {/* Desktop Flow - Horizontal */}
-        <div className="hidden md:flex items-center justify-between gap-4 relative">
+        <div className="hidden md:flex items-start justify-between gap-2 relative">
           {steps.map((stepItem, index) => (
             <div
               key={index}
@@ -25,32 +25,28 @@ const FlowDiagram = ({ steps }) => {
             >
               {/* Step Circle */}
               <div
-                className="w-20 h-20 rounded-full bg-gradient-to-br from-french to-battleGray 
-                flex items-center justify-center mb-4 shadow-xl relative group"
+                className="w-16 h-16 rounded-full bg-gradient-to-br from-platinum to-battleGray 
+                flex items-center justify-center mb-4 shadow-lg relative group flex-shrink-0"
               >
-                <span className="text-eerieBlack font-bold text-[24px] z-10">
+                <span className="text-eerieBlack font-bold text-[20px] z-10">
                   {index + 1}
                 </span>
-                <div
-                  className="absolute inset-0 rounded-full bg-french opacity-0 
-                  group-hover:opacity-20 transition-opacity duration-300"
-                ></div>
               </div>
 
               {/* Step Content */}
               <div className="w-full flex flex-col items-center">
                 <h4
-                  className="text-timberWolf font-bold text-[18px] mb-3 
+                  className="text-white font-bold text-[14px] mb-3 
                   text-center font-beckman uppercase tracking-wide"
                 >
                   {stepItem.step}
                 </h4>
                 <div
-                  className="bg-eerieBlack/30 rounded-lg p-4 w-full min-h-[100px] 
-                  flex items-center justify-center"
+                  className="bg-richBlack/80 rounded-lg p-4 w-full min-h-[120px] 
+                  flex items-center justify-center border border-jet/50"
                 >
                   <p
-                    className="text-silver text-[14px] text-center leading-[22px]
+                    className="text-white text-[13px] text-center leading-[20px]
                     font-poppins"
                   >
                     {stepItem.description}
@@ -61,17 +57,17 @@ const FlowDiagram = ({ steps }) => {
               {/* Arrow Connector */}
               {index < steps.length - 1 && (
                 <div
-                  className="absolute top-10 left-full w-full max-w-[100px] 
+                  className="absolute top-8 left-full w-full max-w-[60px] 
                   flex items-center justify-center z-0"
                 >
                   <div
-                    className="w-full h-1 bg-gradient-to-r from-french to-battleGray 
+                    className="w-full h-[2px] bg-battleGray 
                     relative"
                   >
                     <div
                       className="absolute right-0 top-1/2 transform -translate-y-1/2 
-                      translate-x-1/2 w-0 h-0 border-l-[12px] border-l-french 
-                      border-t-[6px] border-t-transparent border-b-[6px] 
+                      translate-x-1/2 w-0 h-0 border-l-[8px] border-l-battleGray 
+                      border-t-[4px] border-t-transparent border-b-[4px] 
                       border-b-transparent"
                     ></div>
                   </div>
@@ -87,10 +83,10 @@ const FlowDiagram = ({ steps }) => {
             <div key={index} className="flex items-start gap-4 relative">
               {/* Step Circle */}
               <div
-                className="w-16 h-16 rounded-full bg-gradient-to-br from-french to-battleGray 
-                flex items-center justify-center shadow-xl flex-shrink-0"
+                className="w-14 h-14 rounded-full bg-gradient-to-br from-platinum to-battleGray 
+                flex items-center justify-center shadow-lg flex-shrink-0"
               >
-                <span className="text-eerieBlack font-bold text-[20px]">
+                <span className="text-eerieBlack font-bold text-[18px]">
                   {index + 1}
                 </span>
               </div>
@@ -98,14 +94,14 @@ const FlowDiagram = ({ steps }) => {
               {/* Step Content */}
               <div className="flex-1 flex flex-col">
                 <h4
-                  className="text-timberWolf font-bold text-[16px] mb-2 
+                  className="text-white font-bold text-[14px] mb-2 
                   font-beckman uppercase tracking-wide"
                 >
                   {stepItem.step}
                 </h4>
-                <div className="bg-eerieBlack/30 rounded-lg p-3">
+                <div className="bg-richBlack/80 rounded-lg p-3 border border-jet/50">
                   <p
-                    className="text-silver text-[13px] leading-[20px] 
+                    className="text-white text-[12px] leading-[18px] 
                     font-poppins"
                   >
                     {stepItem.description}
@@ -116,8 +112,7 @@ const FlowDiagram = ({ steps }) => {
               {/* Vertical Arrow */}
               {index < steps.length - 1 && (
                 <div
-                  className="absolute left-8 top-16 w-0.5 h-6 bg-gradient-to-b 
-                  from-french to-battleGray"
+                  className="absolute left-7 top-14 w-[2px] h-6 bg-battleGray"
                 ></div>
               )}
             </div>
