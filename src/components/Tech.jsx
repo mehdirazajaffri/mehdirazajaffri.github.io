@@ -16,7 +16,7 @@ const Tech = () => {
         {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
             <img
-              style={{maxHeight:"100px",maxWidth:"100px"}}
+              style={{ maxHeight: '100px', maxWidth: '100px' }}
               src={technology.icon}
             />
           </div>

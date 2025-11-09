@@ -1,67 +1,78 @@
-import bwmap from "./backgrounds/bw-map.jpeg";
-import nairobi from "./backgrounds/nairobi.png";
-import whiteabstract from "./backgrounds/white-abstract.png";
-import worldmap from "./backgrounds/world-map.png";
+import bwmap from './backgrounds/bw-map.jpeg';
+import nairobi from './backgrounds/nairobi.png';
+import whiteabstract from './backgrounds/white-abstract.png';
+import worldmap from './backgrounds/world-map.png';
 
-import logo from "./logo/logo-black.png";
-import logotext from "./logo/logo-text-black.png";
+import logo from './logo/logo-black.png';
+import logotext from './logo/logo-text-black.png';
 
-import mehdiAvatar from "./personal/mehdi-avatar.png";
-import mehdi from "./personal/mehdi.png";
+import mehdiAvatar from './personal/mehdi-avatar.png';
+import mehdi from './personal/mehdi.png';
 
-import backend from "./icons/backend.png";
-import close from "./icons/close.png";
-import download from "./icons/download.png";
-import downloadHover from "./icons/downloadHover.png";
-import frontend from "./icons/frontend.png";
-import github from "./icons/github.png";
-import menu from "./icons/menu.png";
-import pineapple from "./icons/pineapple.png";
-import pineappleHover from "./icons/pineappleHover.png";
-import prototyping from "./icons/prototyping.png";
-import resume from "./icons/resume.png";
-import send from "./icons/send.png";
-import sendHover from "./icons/sendHover.png";
-import ux from "./icons/ux.png";
+import backend from './icons/backend.png';
+import close from './icons/close.png';
+import download from './icons/download.png';
+import downloadHover from './icons/downloadHover.png';
+import frontend from './icons/frontend.png';
+import github from './icons/github.png';
+import menu from './icons/menu.png';
+import pineapple from './icons/pineapple.png';
+import pineappleHover from './icons/pineappleHover.png';
+import prototyping from './icons/prototyping.png';
+import resume from './icons/resume.png';
+import send from './icons/send.png';
+import sendHover from './icons/sendHover.png';
+import ux from './icons/ux.png';
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import graphql from "./tech/graphql.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import nodejs from "./tech/nodejs.png";
-import postgresql from "./tech/postgresql.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import rubyrails from "./tech/rubyrails.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
+import css from './tech/css.png';
+import docker from './tech/docker.png';
+import figma from './tech/figma.png';
+import git from './tech/git.png';
+import graphql from './tech/graphql.png';
+import html from './tech/html.png';
+import javascript from './tech/javascript.png';
+import nodejs from './tech/nodejs.png';
+import postgresql from './tech/postgresql.png';
+import reactjs from './tech/reactjs.png';
+import redux from './tech/redux.png';
+import rubyrails from './tech/rubyrails.png';
+import tailwind from './tech/tailwind.png';
+import typescript from './tech/typescript.png';
 
-import coverhunt from "./company/coverhunt.png";
-import dcc from "./company/dcc.png";
-import kelhel from "./company/kelhel.png";
-import microverse from "./company/microverse.png";
-import venturedive from "./company/venturedive.png";
+import coverhunt from './company/coverhunt.png';
+import dcc from './company/dcc.png';
+import kelhel from './company/kelhel.png';
+import microverse from './company/microverse.png';
+import venturedive from './company/venturedive.png';
 
-import aws from "./icons/aws.png";
-import django from "./icons/django.png";
-import java from "./icons/java.png";
-import lambda from "./icons/lambda.png";
-import python from "./icons/python.png";
-import berkeley from "./projects/berkeley.png";
-import komikult from "./projects/komikult.png";
-import leaderboard from "./projects/leaderboard.png";
-import math from "./projects/math-magicians.png";
-import movie from "./projects/movie-metro.png";
-import nyeusi from "./projects/nyeusi.png";
-import sellanycar from "./projects/sellanycar.png";
-import servicemart from "./projects/servicemarket.png";
-import space from "./projects/space-hub.png";
-import vistajet from "./projects/vistajet.png";
-import xbyoj from "./projects/xbyoj.png";
-import zglue from "./projects/zglue.png";
+import aws from './icons/aws.png';
+import angular from './icons/angular.png';
+import django from './icons/django.png';
+import dynamodb from './icons/dynamodb.png';
+import fastapi from './icons/fastapi.png';
+import flask from './icons/flask.png';
+import flutter from './icons/flutter.png';
+import go from './icons/go.png';
+import java from './icons/java.png';
+import jenkins from './icons/jenkins.png';
+import kubernetes from './icons/kubernetes.png';
+import lambda from './icons/lambda.png';
+import mongodb from './icons/mongodb.png';
+import mysql from './icons/mysql.png';
+import nextjs from './icons/nextjs.png';
+import python from './icons/python.png';
+import berkeley from './projects/berkeley.png';
+import komikult from './projects/komikult.png';
+import leaderboard from './projects/leaderboard.png';
+import math from './projects/math-magicians.png';
+import movie from './projects/movie-metro.png';
+import nyeusi from './projects/nyeusi.png';
+import sellanycar from './projects/sellanycar.png';
+import servicemart from './projects/servicemarket.png';
+import space from './projects/space-hub.png';
+import vistajet from './projects/vistajet.png';
+import xbyoj from './projects/xbyoj.png';
+import zglue from './projects/zglue.png';
 
 export {
   bwmap,
@@ -122,4 +133,15 @@ export {
   mehdiAvatar,
   java,
   lambda,
+  mysql,
+  angular,
+  dynamodb,
+  fastapi,
+  flask,
+  flutter,
+  go,
+  jenkins,
+  kubernetes,
+  mongodb,
+  nextjs,
 };

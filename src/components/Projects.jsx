@@ -1,12 +1,10 @@
-import { motion } from "framer-motion";
-import { pineapple, pineappleHover } from "../assets";
-import { projects } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { styles } from "../styles";
-import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
-import { useState } from "react";
-import PropTypes from "prop-types";
-
+import { motion } from 'framer-motion';
+import { projects } from '../constants';
+import { SectionWrapper } from '../hoc';
+import { styles } from '../styles';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const ProjectCard = ({
   id,
@@ -20,9 +18,9 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className={`relative ${
-        active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
+        active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
       } flex items-center justify-center min-w-[170px] 
       h-[420px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}
@@ -37,7 +35,7 @@ const ProjectCard = ({
         alt={name}
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
-      
+
       {active !== id ? (
         <div className="flex items-center justify-start pr-[4.5rem]">
           <h3
@@ -69,32 +67,29 @@ const ProjectCard = ({
               {description}
             </p>
             <button
-              className="live-demo flex justify-between 
+              className="live-demo flex justify-center items-center
               sm:text-[16px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-2 pr-3 
-              whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-              w-[125px] h-[46px] rounded-[10px] glassmorphism 
+              font-semibold font-beckman py-4 px-6
+              gap-2 rounded-lg glassmorphism 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
-              onClick={() => window.open(demo, "_blank")}
-              onMouseOver={() => {
-                document
-                  .querySelector(".btn-icon")
-                  .setAttribute("src", pineappleHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector(".btn-icon")
-                  .setAttribute("src", pineapple);
-              }}
+              hover:text-eerieBlack transition-all duration-300 
+              ease-in-out transform hover:scale-105 shadow-lg
+              hover:shadow-xl border border-timberWolf/20
+              hover:border-timberWolf/40 group"
+              onClick={() => window.open(demo, '_blank')}
             >
-              <img
-                src={pineapple}
-                alt="pineapple"
-                className="btn-icon sm:w-[34px] sm:h-[34px] 
-                  w-[30px] h-[30px] object-contain"
-              />
+              <svg
+                className="sm:w-5 sm:h-5 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
               Navigate
             </button>
           </div>
@@ -105,7 +100,7 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const [active, setActive] = useState("project-2");
+  const [active, setActive] = useState('project-1');
 
   return (
     <div className="-mt-[6rem]">
@@ -116,13 +111,13 @@ const Projects = () => {
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
         >
-          These projects demonstrate my expertise with practical examples of
-          some of my work. They showcase my ability to tackle intricate
-          challenges, adapt to various technologies, and efficiently oversee
-          projects.
+          A curated collection of my work showcasing innovative solutions and
+          technical excellence. Each project represents a unique challenge
+          solved through creative problem-solving, cutting-edge technologies,
+          and attention to detail.
         </motion.p>
       </div>
 
@@ -160,4 +155,4 @@ ProjectCard.propTypes = {
   handleClick: PropTypes.func.isRequired,
 };
 
-export default SectionWrapper(Projects, "projects");
+export default SectionWrapper(Projects, 'projects');
